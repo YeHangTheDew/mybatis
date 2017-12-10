@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<dataSource>
+		<property name="driver" value="oracle.jdbc.driver.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcl"></property>
+		<property name="user" value="vera"></property>
+		<property name="password" value="a"></property>
+	</dataSource>
+	
+	<mappers>
+		<!--
+			 '/': 表示路径 读取配置文件 com/yee/mybatis/resource/*.xml
+			 '.':  加载类 com.yee.mybatis.  Class.forName();
+		 -->
+		<mapper resource="com/yee/mybatis/bean/DeptMapper.xml" />
+	</mappers>
+</configuration>
