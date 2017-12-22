@@ -7,12 +7,11 @@
 		<property name="user" value="vera"></property>
 		<property name="password" value="a"></property>
 	</dataSource>
-	
+
 	<mappers>
-		<!--
-			 '/': 表示路径 读取配置文件 com/yee/mybatis/resource/*.xml
-			 '.':  加载类 com.yee.mybatis.  Class.forName();
-		 -->
+		<!-- '/': 表示路径 读取配置文件 com/yee/mybatis/resource/*.xml '.': 加载类 com.yee.mybatis. 
+			Class.forName(); -->
 		<mapper resource="com/yee/mybatis/bean/DeptMapper.xml" />
 	</mappers>
 </configuration>
+

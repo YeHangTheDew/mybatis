@@ -31,7 +31,6 @@ public class SqlSession {
 		//获取sql 
 		//获取参数列表
 		MapperInfo mapperInfo=factory.getMapperInfos().get(sqlId); //键值对存储可以快速获取 addDept findAll 和 对应的属性 parameterType resultMap
-
 		if(mapperInfo!=null){
 			try {
 				String sql=mapperInfo.getSql();
@@ -60,13 +59,14 @@ public class SqlSession {
 	public int update(String sqlId,Object obj){
 		int result=0;
 		//获取<update></update> 里边的属性值
-		MapperInfo mapperInfo=factory.getMapperInfos().get("sqlId"); //addDept
-		
-		//获取sql语句  重！！ #{usid} #{pwd}
+		MapperInfo mapperInfo=factory.getMapperInfos().get(sqlId); //addDept
+		System.out.println(mapperInfo);
+		//获取sql语句  重！！ #{usid} #{pwd}--> usid pwd 
 		if(mapperInfo!=null){
 			String sql=mapperInfo.getSql();
-			System.out.println(sql);
-			System.out.println(obj);
+//			System.out.println(sql);
+//			System.out.println(obj);
+			
 		}
 		return result;
 	}

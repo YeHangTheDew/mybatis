@@ -10,8 +10,9 @@ import com.yee.mybatis.SqlSessionFactory;
 import com.yee.mybatis.bean.Dept;
 
 public class MyTest {
+	
 	@Test
-	public void test(){
+	public void test1(){
 		// 配置文件放在src目录下
 		MyBatisConfig myBatisConfig=new MyBatisConfig("mybatis-config.xml");
 		SqlSessionFactory sqlSessionFactory=new SqlSessionFactory(myBatisConfig);
@@ -23,8 +24,7 @@ public class MyTest {
 	}
 	
 	@Test
-	public void test1(){
-		// 配置文件放在src目录下
+	public void test2(){
 		MyBatisConfig myBatisConfig=new MyBatisConfig("mybatis-config.xml");
 		SqlSessionFactory sqlSessionFactory=new SqlSessionFactory(myBatisConfig);
 		SqlSession session=new SqlSession(sqlSessionFactory);

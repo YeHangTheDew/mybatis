@@ -63,6 +63,7 @@ public class SqlSessionFactory {
 //					System.out.println(el.attributeValue("resultType"));  //null
 //					System.out.println(el.getTextTrim()); //insert into dept values(#{deptno},#{dname},#{loc})
 				}
+				System.out.println(mapperInfos);
 			}
 		}
 	}
